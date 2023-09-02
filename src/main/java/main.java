@@ -22,5 +22,25 @@ public class main {
 
         // производим проверку (сравниваем ожидаемый и фактический):
         System.out.println(expected + " ==?== " + actual);
+
+        amount = 1_000;
+        registered = false;
+        expected = 10;
+
+        // вызываем целевой метод:
+        actual = service.calculate(amount, registered);
+
+        // производим проверку (сравниваем ожидаемый и фактический):
+        System.out.println(expected + " ==?== " + actual);
+
+        amount = 1_000_000;
+        registered = false;
+        expected = 500;
+
+        // вызываем целевой метод:
+        actual = service.calculate(amount, registered);
+
+        // производим проверку (сравниваем ожидаемый и фактический):
+        System.out.println(expected + " ==?== " + actual);
     }
 }
